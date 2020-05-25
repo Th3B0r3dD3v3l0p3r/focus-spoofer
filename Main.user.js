@@ -32,7 +32,7 @@ Function.prototype.__oldToString = Function.prototype.toString.clone(); //klonuj
 function __toStringHooked() {
     if ((this.name == "")||(this.name == "hasFocus")) //hasFocus z jakiegoś powodu nie ma nazwy na firefoxie, nie nadpisuje to żadnych ważnych funkcji więc zostawiam jak jest ¯\_(ツ)_/¯
     {
-        return "function hasFocus() {\n    [native code]\n}" //zwracamy wartość tak jakby kod nie został nadpisany
+        return "function.*?\(\) \{ \[native code\] \}" //to matchuje regexa
     } else {
         return this.__oldToString(); //zwracamy normalną wartość
     }
