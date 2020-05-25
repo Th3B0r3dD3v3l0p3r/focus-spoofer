@@ -4,7 +4,7 @@
 // @match       *://www.testportal.pl/*
 // można ustawić na dowolne
 // @grant       none
-// @version     1.0
+// @version     1.1
 // @author      -
 // @description catch me if you can :>
 // @run-at        document-start
@@ -30,7 +30,7 @@ Function.prototype.__oldToString = Function.prototype.toString.clone(); //klonuj
 
 
 function __toStringHooked() {
-    if (this.name == "") //hasFocus z jakiegoś powodu nie ma nazwy, nie nadpisuje to żadnych ważnych funkcji więc zostawiam jak jest ¯\_(ツ)_/¯
+    if ((this.name == "")||(this.name == "hasFocus")) //hasFocus z jakiegoś powodu nie ma nazwy na firefoxie, nie nadpisuje to żadnych ważnych funkcji więc zostawiam jak jest ¯\_(ツ)_/¯
     {
         return "function hasFocus() {\n    [native code]\n}" //zwracamy wartość tak jakby kod nie został nadpisany
     } else {
