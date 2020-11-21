@@ -1,9 +1,6 @@
 # focus-spoofer
 Skrypt ukrywający fakt przełączania kart na różnych stronach, jak i sam fakt ukrywania tego faktu.
 
-## UWAGA
-Najnowsza wersja jest wersją testową przeznaczoną an Chrome. Wersja na Chrome nie zadziała na Firefoxie i vice versa. Wersja na Chrome jest wersją eksperymentalną i może losowo przestawać działać. Zalecana jest instalacja Firefoxa i używanie odpowiedniej dla niego wersji.
-
 ## instalacja
 Do użycia skryptu trzeba najpierw zainstalować dodatek umożliwiający uruchamianie własnych skryptów (userscript) na stronach. Ja używam violentmonkey. Możliwe, że zadziała na innych dodatkach, ale nie było testowane.
 
