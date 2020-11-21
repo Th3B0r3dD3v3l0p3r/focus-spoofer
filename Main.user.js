@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name        focus-spoofer
 // @namespace   Violentmonkey Scripts
-// @match       *://www.testportal.pl/*
+// @match       *://*.*/*
 // można ustawić na dowolne
 // @grant       none
 // @version     1.1
@@ -12,6 +12,7 @@
 
 //https://stackoverflow.com/questions/1833588/javascript-clone-a-function
 //¯\_(ツ)_/¯
+
 Function.prototype.clone = function() {
     var that = this;
     var temp = function temporary() {
@@ -32,7 +33,7 @@ Function.prototype.__oldToString = Function.prototype.toString.clone(); //klonuj
 function __toStringHooked() {
     if ((this.name == "")||(this.name == "hasFocus")) //hasFocus z jakiegoś powodu nie ma nazwy na firefoxie, nie nadpisuje to żadnych ważnych funkcji więc zostawiam jak jest ¯\_(ツ)_/¯
     {
-        return "function.*?\(\) \{ \[native code\] \}" //to matchuje regexa
+        return eval+"" //to matchuje regexa
     } else {
         return this.__oldToString(); //zwracamy normalną wartość
     }
