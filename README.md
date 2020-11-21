@@ -11,6 +11,6 @@ Do użycia skryptu trzeba najpierw zainstalować dodatek umożliwiający urucham
 * [Violentmonkey na chrome](https://chrome.google.com/webstore/detail/violentmonkey/jinjaccalgkegednnccohejagnlnfdag)
 
 Po zainstalowaniu dodatku można zainstalować skrypt
-* [wersja Firefoz (stabilna)](https://raw.githubusercontent.com/Th3B0r3dD3v3l0p3r/focus-spoofer/8f6e1fdaa4153789289f61fecd3683b28877fce7/Main.user.js)
+* [wersja Firefox (stabilna)](https://github.com/Th3B0r3dD3v3l0p3r/focus-spoofer/raw/master/Main.user.js)
 * [wersja Chrome (eksperymentalna)](https://github.com/Th3B0r3dD3v3l0p3r/focus-spoofer/raw/master/Main.user.js)
 
